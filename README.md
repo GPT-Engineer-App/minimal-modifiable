@@ -1,38 +1,72 @@
-# minimal-modifiable
+# Bare-Bones Web Application
 
-Create a bare-bones application that I can modify and build on.
+This is a minimal web application setup using React, Tailwind CSS, and shadcn-ui components. You can use this as a starting point to build your application.
 
-## Collaborate with GPT Engineer
+## Project Structure
 
-This is a [gptengineer.app](https://gptengineer.app)-synced repository 🌟🤖
+- `src/`: Contains the source code of the application.
+  - `pages/`: Contains the page components.
+  - `components/`: Contains reusable UI components.
+  - `App.jsx`: The main application component.
+  - `index.css`: The main CSS file.
+  - `main.jsx`: The entry point of the application.
+- `public/`: Contains public assets like images and icons.
+- `README.md`: This file.
 
-Changes made via gptengineer.app will be committed to this repo.
+## Getting Started
 
-If you clone this repo and push changes, you will have them reflected in the GPT Engineer UI.
+### Prerequisites
 
-## Tech stack
+- Node.js (v14 or higher)
+- npm or yarn
 
-This project is built with React with shadcn-ui and Tailwind CSS.
+### Installation
 
-- Vite
-- React
-- shadcn/ui
-- Tailwind CSS
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
 
-## Setup
+2. Install the dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-```sh
-git clone https://github.com/GPT-Engineer-App/minimal-modifiable.git
-cd minimal-modifiable
-npm i
-```
+### Running the Application
 
-```sh
+To start the development server, run:
+```bash
 npm run dev
+# or
+yarn dev
 ```
 
-This will run a dev server with auto reloading and an instant preview.
+The application will be available at `http://localhost:3000`.
 
-## Requirements
+### Building the Application
 
-- Node.js & npm - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+To build the application for production, run:
+```bash
+npm run build
+# or
+yarn build
+```
+
+The built files will be in the `dist/` directory.
+
+### Modifying the Application
+
+- To add new pages, create a new file in the `src/pages/` directory and add a new route in `src/App.jsx`.
+- To add new components, create a new file in the `src/components/` directory and import it where needed.
+- To modify styles, edit the `src/index.css` file or add new CSS files as needed.
+
+### Learn More
+
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [shadcn-ui Documentation](https://shadcn.dev/docs)
+
+Happy coding!
